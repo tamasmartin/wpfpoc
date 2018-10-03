@@ -7,9 +7,12 @@ namespace DataProvider
 
     public partial class NorthWindContext : DbContext
     {
+        
+
         public NorthWindContext()
             : base("name=NorthWindContext")
         {
+            var ensureDLLIsCopied = System.Data.Entity.SqlServer.SqlProviderServices.Instance;
         }
 
         public virtual DbSet<Category> Categories { get; set; }
