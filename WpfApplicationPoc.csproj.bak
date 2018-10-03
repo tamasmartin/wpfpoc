@@ -138,7 +138,7 @@
     <None Include="Properties\DataSources\DataProvider.Product.datasource" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="DataProvider\DataProvider.csproj">
+    <ProjectReference Include="..\DataProvider\DataProvider.csproj">
       <Project>{ecb7aea3-5bc8-4757-95e1-f7e721e7a49d}</Project>
       <Name>DataProvider</Name>
     </ProjectReference>

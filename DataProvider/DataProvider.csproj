@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ECB7AEA3-5BC8-4757-95E1-F7E721E7A49D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataProvider</RootNamespace>
+    <AssemblyName>DataProvider</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\WpfApplicationPoc\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\WpfApplicationPoc\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DryIoc\AsyncExecutionFlowScopeContext.cs" />
+    <Compile Include="DryIoc\Container.cs" />
+    <Compile Include="DryIoc\FastExpressionCompiler.cs" />
+    <Compile Include="DryIoc\ImTools.cs" />
+    <Compile Include="EFModels\Alphabetical_list_of_product.cs" />
+    <Compile Include="EFModels\Category.cs" />
+    <Compile Include="EFModels\Category_Sales_for_1997.cs" />
+    <Compile Include="EFModels\Current_Product_List.cs" />
+    <Compile Include="EFModels\Customer.cs" />
+    <Compile Include="EFModels\CustomerDemographic.cs" />
+    <Compile Include="EFModels\Customer_and_Suppliers_by_City.cs" />
+    <Compile Include="EFModels\Employee.cs" />
+    <Compile Include="EFModels\Invoice.cs" />
+    <Compile Include="Exceptions\InvalidParameterException.cs" />
+    <Compile Include="NorthWindContext.cs" />
+    <Compile Include="EFModels\Order.cs" />
+    <Compile Include="EFModels\Orders_Qry.cs" />
+    <Compile Include="EFModels\Order_Detail.cs" />
+    <Compile Include="EFModels\Order_Details_Extended.cs" />
+    <Compile Include="EFModels\Order_Subtotal.cs" />
+    <Compile Include="EFModels\Product.cs" />
+    <Compile Include="EFModels\Products_Above_Average_Price.cs" />
+    <Compile Include="EFModels\Products_by_Category.cs" />
+    <Compile Include="EFModels\Product_Sales_for_1997.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EFModels\Region.cs" />
+    <Compile Include="EFModels\Sales_by_Category.cs" />
+    <Compile Include="EFModels\Sales_Totals_by_Amount.cs" />
+    <Compile Include="EFModels\Shipper.cs" />
+    <Compile Include="EFModels\Summary_of_Sales_by_Quarter.cs" />
+    <Compile Include="EFModels\Summary_of_Sales_by_Year.cs" />
+    <Compile Include="EFModels\Supplier.cs" />
+    <Compile Include="EFModels\Territory.cs" />
+    <Compile Include="Repository\ProductRepository.cs" />
+    <Compile Include="Repository\ProductViewModel.cs" />
+    <Compile Include="Services\DryIocExtensions.cs" />
+    <Compile Include="Services\IProductProvider.cs" />
+    <Compile Include="Services\ProductProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
