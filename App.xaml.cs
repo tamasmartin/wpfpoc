@@ -27,9 +27,9 @@ namespace WpfApplicationPoc
                 var mainWindow = Container.Resolve<MainWindow>();
                 mainWindow.Show();
 
-                var service = new ServiceReference1.ProductProviderClient();
-                var p = service.GetProduct(3);
-                logger.Information(p.ProductName);
+                //var service = new ServiceReference1.ProductProviderClient();
+                //var p = service.GetProduct(3);
+                //logger.Information(p.ProductName);
             }
             catch (Exception ex)
             {
