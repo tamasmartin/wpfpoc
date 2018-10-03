@@ -4,15 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplicationPoc", "WpfApplicationPoc.csproj", "{7D52B2EF-E2A5-4423-9D49-9DFD1638B171}"
-	ProjectSection(ProjectDependencies) = postProject
-		{66F8D88A-3502-4C7D-BC2A-E75361FEF67C} = {66F8D88A-3502-4C7D-BC2A-E75361FEF67C}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProvider", "DataProvider\DataProvider.csproj", "{ECB7AEA3-5BC8-4757-95E1-F7E721E7A49D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{1FDDA017-CF90-48CC-B263-152593FFA7F6}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceLibrary", "WcfServiceLibrary\WcfServiceLibrary.csproj", "{66F8D88A-3502-4C7D-BC2A-E75361FEF67C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0B093BEF-5BE0-4F12-B964-8EE00DCCD598}"
 	ProjectSection(SolutionItems) = preProject
@@ -37,10 +32,6 @@ Global
 		{1FDDA017-CF90-48CC-B263-152593FFA7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FDDA017-CF90-48CC-B263-152593FFA7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FDDA017-CF90-48CC-B263-152593FFA7F6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{66F8D88A-3502-4C7D-BC2A-E75361FEF67C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{66F8D88A-3502-4C7D-BC2A-E75361FEF67C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{66F8D88A-3502-4C7D-BC2A-E75361FEF67C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{66F8D88A-3502-4C7D-BC2A-E75361FEF67C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
